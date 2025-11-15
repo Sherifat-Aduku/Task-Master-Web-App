@@ -1,0 +1,67 @@
+
+body {
+ background-image: url(https://img.freepik.com/premium-photo/misty-rainbow-landscape-dawn_568886-28814.jpg?semt=ais_hybrid&w=740&q=80);
+ position: absolute;
+ left: 25rem;
+ right: 25rem;
+ font-family: Arial, sans-serif;
+}
+
+
+.login {
+  background-color: white;
+  margin: 20px;
+  padding: 4rem;
+  align-content: center;
+  border-color: white;
+  border-radius: 12px;
+
+}
+ h1 {
+font-size: 25px;
+font-weight: bold;
+}
+
+.container p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+
+input {
+  
+ width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+
+
+}
+
+button {
+  background: #FFC107;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: default;
+  outline: white;
+}
+
+.footer {
+  color: #666;
+  margin-top: 20px;
+  font-size: 12px;
+
+
+}
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+

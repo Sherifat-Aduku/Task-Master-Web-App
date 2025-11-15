@@ -1,0 +1,29 @@
+# TaskMaster UI Project
+
+A simple Login and Signup UI built with HTML, CSS, and JavaScript using a modern folder structure (assets, components, templates).
+
+## 📂 Project Structure
+
+project-folder/
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── components/
+├── templates/
+├── signup.html
+└── login.html
+
+## 🚀 Features
+- Reusable UI components (buttons, input fields)
+- Clean folder organization
+- Signup and Login pages
+- Global styling and scripts
+
+## 🔧 How to Use
+Open signup.html or login.html in your browser.
+Use Live Server for faster preview.
+
+## 📎 Notes
+All images are in assets/images.
+Components have their own CSS and JS.
