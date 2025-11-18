@@ -43,16 +43,11 @@ text-align: center;
 
 background-color: rgb(228, 238, 238);
 display: flex;
-
-  justify-content: center;
-
-  margin-bottom: 20px;
-
-  border-radius: 8px;
-
-  overflow: hidden;
-
-  background: #f0f0f0;
+justify-content: center;
+margin-bottom: 20px;
+border-radius: 8px;
+overflow: hidden;
+background: #f0f0f0;
 
 }
 
@@ -62,7 +57,7 @@ display: flex;
   padding: 10px;
   border: none;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 400px;
   background: #f0f0f0;
   transition: all 0.3s;
 
@@ -125,6 +120,13 @@ input {
   font-weight:bold;
 }
 */
+
+.action-buttons {
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 .help-btn {
  background: #f0f0f0;
   color: #333;

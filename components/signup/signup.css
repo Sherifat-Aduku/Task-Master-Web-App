@@ -42,16 +42,11 @@ text-align: center;
 .container-button {
 
 background-color: rgb(228, 238, 238);
-display: flex;
-
+ display: flex;
   justify-content: center;
-
   margin-bottom: 20px;
-
   border-radius: 8px;
-
   overflow: hidden;
-
   background: #f0f0f0;
 
 }
@@ -62,7 +57,7 @@ display: flex;
   padding: 10px;
   border: none;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 400px;
   background: #f0f0f0;
   transition: all 0.3s;
 
@@ -88,8 +83,14 @@ width: 100px;
   margin-bottom: 20px;
 }
 
+label {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
 input {
-  
+
  width: 100%;
   padding: 10px;
   border-radius: 8px;
@@ -104,12 +105,13 @@ input {
   margin: 0 auto;
 }
 
-.input-box.fa-solid {
-  position: absolute;
-  padding: 10px;
-  min-width: 40px;
-}
 
+.action-buttons {
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
 /*button {
   background:#F6BC00;
   border-radius: 7px;
