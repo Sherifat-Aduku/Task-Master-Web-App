@@ -1,0 +1,55 @@
+/* TOGGLE BUTTON */
+.sidebar-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 8px;
+    color: #444;
+}
+
+.sidebar-toggle:hover {
+    opacity: 0.7;
+}
+
+/* COLLAPSED SIDEBAR */
+.sidebar.collapsed {
+    width: 80px;
+    transition: width 0.3s ease;
+}
+
+.sidebar {
+    transition: width 0.3s ease;
+}
+
+/* Hide text when collapsed */
+.sidebar.collapsed .app-title span,
+.sidebar.collapsed .user-info,
+.sidebar.collapsed .menu-links a span,
+.sidebar.collapsed .logout-box a span,
+.sidebar.collapsed .sub-text {
+    display: none;
+}
+
+.menu-links a i {
+    font-size: 18px;
+}
+
+/* Center icons when collapsed */
+.sidebar.collapsed .menu-links a {
+    justify-content: center;
+}
+
+/* Avatar smaller */
+.sidebar.collapsed .avatar {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+}
+
+/* Main content expands */
+.sidebar.collapsed ~ .content {
+    margin-left: -180px;
+    transition: margin-left 0.3s ease;
+}
