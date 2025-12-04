@@ -10,14 +10,18 @@ project-folder/
 │   ├── js/
 │   └── images/
 ├── components/
-├── templates/
-├── signup.html
+    ├── community
+│   ├── task
+│   └── dashboard
+│   └── login
+    └── signup
+    
+├── index.html
 └── login.html
 
 ##  Features
 - Clean folder organization
-- Signup and Login pages
-- Global styling and scripts
+- Signup, Login, dashboard, task and community pages
 
 ##  How to Use
 Open signup.html or login.html or dashboard.html in your browser.
