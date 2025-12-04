@@ -7,15 +7,19 @@
     margin-bottom: 20px;
     padding: 8px;
     color: #444;
+    display: flex;
 }
 
+.app-title.fa-chevron-right {
+ display: flex;   
+}
 .sidebar-toggle:hover {
     opacity: 0.7;
 }
 
 /* COLLAPSED SIDEBAR */
 .sidebar.collapsed {
-    width: 80px;
+    width: 50px;
     transition: width 0.3s ease;
 }
 
