@@ -37,26 +37,26 @@ text-align: center;
 }
 
 .container-button {
-  background-color: rgb(228, 238, 238);
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
   border-radius: 8px;
   overflow: hidden;
+  background-color: #e4eeee;
 }
 
-.active-btn-login button{
-width: 100px;
-border-radius: 5px;
-color:black;
-border: none;
-padding: 2px;
-margin: 2px;
-background-color: #fff;
+.container-button button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color:#f0f0f0;
+  transition: all 0.3s ease;
 }
-
-.active-btn-signup {
-width: 100px;
+button.active {
+   background: #fff;
+    color: black;
 }
 
 .signup-container p {
