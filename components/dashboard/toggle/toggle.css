@@ -1,30 +1,44 @@
 /* TOGGLE BUTTON */
 .sidebar-toggle {
-    background: none;
+    position: absolute;
+    top: 20px;
+    right: -18px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #6b4eff; /* Purple */
+    color: white;
     border: none;
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
     cursor: pointer;
     margin-bottom: 20px;
     padding: 8px;
-    color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 2000;
+    transition: right 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+    opacity: 0.85;
+}
+
+/* Chevron icon display */
+.app-title.fa-chevron-right {
     display: flex;
 }
 
-.app-title.fa-chevron-right {
- display: flex;   
-}
-.sidebar-toggle:hover {
-    opacity: 0.7;
+/* SIDEBAR */
+.sidebar {
+    position: relative;
+    transition: width 0.3s ease;
 }
 
 /* COLLAPSED SIDEBAR */
 .sidebar.collapsed {
     width: 50px;
-    transition: width 0.3s ease;
-}
-
-.sidebar {
-    transition: width 0.3s ease;
 }
 
 /* Hide text when collapsed */
@@ -36,6 +50,7 @@
     display: none;
 }
 
+/* Menu icons */
 .menu-links a i {
     font-size: 18px;
 }
@@ -45,14 +60,14 @@
     justify-content: center;
 }
 
-/* Avatar smaller */
+/* Smaller avatar when collapsed */
 .sidebar.collapsed .avatar {
     width: 35px;
     height: 35px;
     font-size: 14px;
 }
 
-/* Main content expands */
+/* Main content shifts when sidebar collapsed */
 .sidebar.collapsed ~ .content {
     margin-left: -180px;
     transition: margin-left 0.3s ease;
