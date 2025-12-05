@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 
-/* --- SAME SIDEBAR STYLES AS MY TASK PAGE --- */
+/* --- SAME SIDEBAR STYLES AS YOUR TASK PAGE --- */
 .sidebar {
     width: 260px;
     background: white;
@@ -106,93 +106,107 @@ body {
     gap: 10px;
 }
 
-/* --- COMMUNITY PAGE CONTENT --- */
-
-.content {
-    flex: 1;
-    padding: 35px;
-}
-
-.community-header h1 {
-    margin: 0;
+.page-title {
     font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #222;
 }
 
-.community-header p {
-    margin-top: 4px;
-    color: #777;
+.header-flex p {
+    margin-top: 5px;
 }
 
-/* INPUT BOX */
-.post-input-box {
-    margin-top: 25px;
-    background: white;
-    padding: 18px;
-    border-radius: 12px;
+/* TAB BUTTONS */
+.expense-tabs {
+    margin: 20px 0 30px;
     display: flex;
-    align-items: center;
-    gap: 12px;
-    border: 1px solid #eee;
+    gap: 10px;
 }
 
-.post-input-box input {
-    flex: 1;
-    padding: 12px 15px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    font-size: 15px;
-}
-
-.post-input-box button {
-    background: #6b4eff;
-    color: white;
-    border: none;
+.expense-tabs .tab {
     padding: 10px 18px;
     border-radius: 8px;
+    background: #f2f2f7;
+    border: none;
+    font-size: 14px;
     cursor: pointer;
 }
 
-/* POSTS LIST */
-.posts-list {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.expense-tabs .tab.active {
+    background: #e7e0ff;
+    color: #6b4eff;
 }
 
-.post-card {
+/* STAT CARDS */
+.expense-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.expense-card {
     background: white;
     padding: 22px;
-    border-radius: 12px;
+    border-radius: 14px;
     border: 1px solid #eee;
 }
 
-.post-header {
+.expense-card h4 {
+    margin: 0 0 10px;
+    color: #444;
+    font-size: 15px;
+}
+
+.expense-card .value {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.expense-card small {
+    color: #777;
+}
+
+/* RECENT EXPENSE BOX */
+.recent-box {
+    margin-top: 35px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-expense-btn {
+    background: #4b39ff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
 }
 
-.post-header .tag {
-    background: #f0eaff;
-    color: #6b4eff;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-size: 12px;
+.add-expense-btn:hover {
+    opacity: 0.9;
 }
 
-.post-header .time {
-    margin-left: auto;
-    color: #777;
-    font-size: 13px;
+/* EMPTY STATE */
+.empty-state-expense {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
 }
 
-.post-body p {
-    margin-top: 12px;
-    color: #444;
-    line-height: 1.5;
-}
-
-.post-body ul {
-    margin: 10px 0 10px 20px;
+.empty-state-expense i {
+    font-size: 48px;
+    margin-bottom: 8px;
 }
