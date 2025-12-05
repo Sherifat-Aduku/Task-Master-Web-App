@@ -57,47 +57,81 @@
             <p class="sub-text">Monitor your spending</p>
         </div>
 
-        <!-- TABS -->
-        <div class="expense-tabs">
-            <button class="tab active">💲 My Expenses</button>
-            <button class="tab">📊 AI Summary</button>
+    <!-- TABS -->
+   <div class="expense-tabs">
+    <button class="tab active" data-tab="expenses">💲 My Expenses</button>
+    <button class="tab" data-tab="summary">📊 AI Summary</button>
+</div>
+        <div id="myExpensesSection">
+
+            <!-- STATS -->
+            <div class="expense-stats">
+                <div class="expense-card">
+                    <h4><i class="fa-solid fa-sack-dollar"></i> Total Expenses</h4>
+                    <p class="value">$0.00</p>
+                    <small>0 transactions</small>
+                </div>
+
+                <div class="expense-card">
+                    <h4><i class="fa-solid fa-chart-pie"></i> Top Category</h4>
+                    <p class="value">N/A</p>
+                    <small>$0.00</small>
+                </div>
+
+                <div class="expense-card">
+                    <h4><i class="fa-solid fa-wave-square"></i> Average</h4>
+                    <p class="value">$0.00</p>
+                    <small>per transaction</small>
+                </div>
+            </div>
+
+            <!-- RECENT EXPENSES -->
+            <div class="recent-box">
+                <div class="top-row">
+                    <h2><i class="fa-regular fa-clock"></i> Recent Expenses</h2>
+                    <button class="add-expense-btn">
+                        <i class="fa-solid fa-plus"></i> Add Expense
+                    </button>
+                </div>
+
+                <div class="empty-state-expense">
+                    <i class="fa-solid fa-receipt"></i>
+                    <p>No expenses recorded yet. Start tracking your spending!</p>
+                </div>
+            </div>
+
         </div>
+        <!-- END OF MY EXPENSES SECTION -->
 
-        <!-- STATS -->
-        <div class="expense-stats">
-            <div class="expense-card">
-                <h4><i class="fa-solid fa-sack-dollar"></i> Total Expenses</h4>
-                <p class="value">$0.00</p>
-                <small>0 transactions</small>
+
+        <!-- AI SUMMARY SECTION (HIDDEN BY DEFAULT) -->
+        <div id="aiSummarySection" class="ai-summary hidden">
+
+            <h2 class="ai-title">AI-Powered Expense Summary</h2>
+            <p class="ai-subtext">Get financial insights and budget recommendations</p>
+
+            <!-- Inner Tabs -->
+            <div class="ai-inner-tabs">
+                <button class="ai-inner-tab active"> Latest Summary</button>
+                <button class="ai-inner-tab">⏱ History (0)</button>
             </div>
 
-            <div class="expense-card">
-                <h4><i class="fa-solid fa-chart-pie"></i> Top Category</h4>
-                <p class="value">N/A</p>
-                <small>$0.00</small>
-            </div>
-
-            <div class="expense-card">
-                <h4><i class="fa-solid fa-wave-square"></i> Average</h4>
-                <p class="value">$0.00</p>
-                <small>per transaction</small>
-            </div>
-        </div>
-
-        <!-- RECENT EXPENSES -->
-        <div class="recent-box">
-            <div class="top-row">
-                <h2><i class="fa-regular fa-clock"></i> Recent Expenses</h2>
-                <button class="add-expense-btn">
-                    <i class="fa-solid fa-plus"></i> Add Expense
+            <!-- Generate Button -->
+            <div class="ai-generate-box">
+                <button class="ai-generate-btn">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Generate New
                 </button>
             </div>
 
-            <div class="empty-state-expense">
-                <i class="fa-solid fa-receipt"></i>
-                <p>No expenses recorded yet. Start tracking your spending!</p>
+            <!-- Empty State -->
+            <div class="ai-empty-box">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h4>No summary generated yet</h4>
+                <p>Click “Generate New” to get AI-powered insights</p>
             </div>
+
         </div>
+        <!-- END OF AI SUMMARY SECTION -->
 
     </main>
 </div>

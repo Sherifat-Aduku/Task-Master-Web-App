@@ -1,17 +1,32 @@
+
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Expenses page ready");
 
     const tabs = document.querySelectorAll(".expense-tabs .tab");
+    const myExpensesSection = document.getElementById("myExpensesSection");
+    const aiSummarySection = document.getElementById("aiSummarySection");
+
+    // Default view: My Expenses
+    myExpensesSection.classList.remove("hidden");
+    aiSummarySection.classList.add("hidden");
 
     tabs.forEach(tab => {
         tab.addEventListener("click", () => {
-            document.querySelector(".tab.active")?.classList.remove("active");
+
+            // Make the clicked tab active
+            tabs.forEach(t => t.classList.remove("active"));
             tab.classList.add("active");
 
-            // You can connect real logic here later
-            console.log("Switched to:", tab.textContent.trim());
+            // Show / hide based on which tab was clicked
+            if (tab.dataset.tab === "expenses") {
+                myExpensesSection.classList.remove("hidden");
+                aiSummarySection.classList.add("hidden");
+            } else {
+                myExpensesSection.classList.add("hidden");
+                aiSummarySection.classList.remove("hidden");
+            }
         });
     });
+
 });
 
 document.getElementById("logoutBtn").onclick = () => {
