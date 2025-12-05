@@ -215,12 +215,12 @@ body {
     margin-bottom: 8px;
 }
 
-/* This simply hides whatever we don't want to show */
+
 .hidden {
     display: none !important;
 }
 
-/* The main box for the AI Summary — clean, white, soft edges */
+
 .ai-summary {
     margin-top: 25px;
     background: white;
@@ -229,7 +229,7 @@ body {
     border: 1px solid #eee;
 }
 
-/* Title + small description under it */
+
 .ai-title {
     font-size: 20px;
     font-weight: 700;
@@ -241,7 +241,7 @@ body {
     color: #666;
 }
 
-/* Small tabs inside the AI summary */
+
 .ai-inner-tabs {
     display: flex;
     gap: 10px;
@@ -257,20 +257,19 @@ body {
     font-size: 14px;
 }
 
-/* When a tab is active, give it a soft blue highlight */
 .ai-inner-tab.active {
     background: #e3ebff;
     color: #3b6aff;
 }
 
-/* The box holding the “Generate New” button */
+
 .ai-generate-box {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 25px;
 }
 
-/* The button itself — soft blue and rounded */
+
 .ai-generate-btn {
     background: #a8c7ff;
     color: white;
@@ -284,7 +283,6 @@ body {
     opacity: 0.95;
 }
 
-/* Empty state when no AI summary has been created yet */
 .ai-empty-box {
     border: 1px dashed #d8d8d8;
     padding: 40px;
