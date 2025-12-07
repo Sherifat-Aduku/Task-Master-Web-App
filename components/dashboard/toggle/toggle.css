@@ -6,7 +6,7 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    background: #6b4eff; /* Purple */
+    background: #6b4eff; 
     color: white;
     border: none;
     display: flex;
@@ -25,12 +25,12 @@
     opacity: 0.85;
 }
 
-/* Chevron icon display */
+
 .app-title.fa-chevron-right {
     display: flex;
 }
 
-/* SIDEBAR */
+
 .sidebar {
     position: relative;
     transition: width 0.3s ease;
@@ -41,7 +41,7 @@
     width: 50px;
 }
 
-/* Hide text when collapsed */
+
 .sidebar.collapsed .app-title span,
 .sidebar.collapsed .user-info,
 .sidebar.collapsed .menu-links a span,
@@ -50,24 +50,23 @@
     display: none;
 }
 
-/* Menu icons */
+
 .menu-links a i {
     font-size: 18px;
 }
 
-/* Center icons when collapsed */
+
 .sidebar.collapsed .menu-links a {
     justify-content: center;
 }
 
-/* Smaller avatar when collapsed */
 .sidebar.collapsed .avatar {
     width: 35px;
     height: 35px;
     font-size: 14px;
 }
 
-/* Main content shifts when sidebar collapsed */
+
 .sidebar.collapsed ~ .content {
     margin-left: -180px;
     transition: margin-left 0.3s ease;
