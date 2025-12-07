@@ -19,6 +19,7 @@ body {
   box-shadow: 0 10px 40px rgba(0,0,0,0.08);
 }
 
+
 .task-icon img {
   width: 80px;
 }
@@ -34,29 +35,33 @@ font-size: 30px;
 font-weight: bold;
 text-align: center;
 }
-
 .container-button {
-background-color: rgb(228, 238, 238);
-display: flex;
-justify-content: center;
-margin-bottom: 20px;
-border-radius: 8px;
-overflow: hidden;
-background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #e4eeee;
 }
 
-.active-btn-login button{
-width: 100px;
-border-radius: 5px;
-color:black;
-border: none;
-padding: 2px;
-margin: 2px;
-background-color: #fff;
+.container-button button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color:#f0f0f0;
+  transition: all 0.3s ease;
+}
+button.active {
+   background: #fff;
+    color: black;
 }
 
-.active-btn-signup {
-width: 100px;
+label {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 .login-container p {
@@ -102,7 +107,7 @@ input {
   border-radius: 10px;
 }
 
-.btn-create button {
+.next-step button {
    background: #FFC107;
   color: #fff;
   padding: 6px;
@@ -111,7 +116,7 @@ input {
   box-shadow: 0 4px 8px rgba(255,193,7,0.3);
 }
 
-.btn-create:hover {
+.login:hover {
   background: #e6b800;
 }
 
