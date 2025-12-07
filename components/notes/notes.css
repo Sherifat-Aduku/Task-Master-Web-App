@@ -2,12 +2,12 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #f7f7fb;
     margin: 0;
+    padding: 0;
 }
 
 .main-layout {
     display: flex;
     height: 100vh;
- 
 }
 
 /* SIDEBAR */
@@ -19,13 +19,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-.app-title img{
-  padding: 10px;
-    border-radius: 8px;   
-}
 
-.content.h1 p {
-    font-size: 14px;
+.app-title img {
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .app-title {
@@ -60,7 +57,6 @@ body {
 .user-info h4 {
     margin: 0;
     font-size: 16px;
-    font-weight:bold
 }
 
 .user-info p {
@@ -108,21 +104,26 @@ body {
     gap: 10px;
 }
 
-/* WRAPPER */
+/* MAIN CONTENT AREA for Notes page */
+.content {
+    flex: 1;
+    padding: 35px;
+    overflow-y: auto;
+    background: #f7f7fb;
+}
+
+/* NOTES WRAPPER (inside content) */
 .notes-wrapper {
     background: white;
     border: 1px solid #eee;
     border-radius: 14px;
     padding: 30px;
     width: 100%;
-}
-
-.notes-wrapper {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* HEADER */
+/* HEADER inside notes page */
 .notes-header-full {
     display: flex;
     justify-content: space-between;
@@ -169,7 +170,7 @@ body {
     border: 1px solid #ddd;
 }
 
-/* TOP BAR */
+/* TOP BAR inside notes content */
 .notes-topbar {
     display: flex;
     justify-content: space-between;
@@ -177,7 +178,7 @@ body {
     margin-bottom: 18px;
 }
 
-/* NEW NOTE BTN */
+/* NEW NOTE BUTTON */
 .new-note-btn {
     background: #3b82f6;
     border: none;
@@ -194,7 +195,7 @@ body {
     background: #2563eb;
 }
 
-/* EMPTY BOX */
+/* Empty states for notes / summary */
 .notes-empty,
 .summary-empty {
     text-align: center;
@@ -208,7 +209,7 @@ body {
     margin-bottom: 12px;
 }
 
-/* TAB CONTENT */
+/* TAB CONTENT sections */
 .tab-content {
     display: none;
 }
